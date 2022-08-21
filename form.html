@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>ECampus Request Info</title>
+  <link rel="stylesheet" href="css/default.css" media="screen">
+  <link rel="stylesheet" href="css/theme.css" media="screen">
+  <script type="text/javascript" src="js/enduser.js" language="javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <script type="text/javascript"><!--
+  
+  var _submit_accepted = false;
+  
+  function survey_field(id,min, max, type, elements, question_text, force_ranking)
+  {
+    this.id    = id;
+    this.min   = min;
+    this.max   = max;
+    this.type  = type;
+    this.elements = elements;
+    this.question_text = question_text;
+    this.force_ranking = force_ranking;
+  }
+  
+  var _survey_fields = new Array ();
+  
+  function _do_submit(form)
+  {
+   
+    chk_val = true;
+    chk_val = _check_fields(form.name, fld_data, _fields);
+    
+    
+    if(chk_val)
+     form.p_val_validated.value = 1;
+   
+   return(chk_val);
+   
+ }
+ 
+ 
+ 
+ 
+ var fld_data = new field_data(
+  "is not an integer.",
+  "requires a value.",
+  "is not completely specified.",
+  "The text entered for \'%s\' exceeds its size limit of %d characters by %d characters.",
+  "must only contain valid ascii characters.",
+  "does not seem to be a valid email address.",
+  "Must contain valid furigana characters",
+  "Need to select more options.",
+  "Need to select fewer options.",
+  "Month",
+  "Day",
+  "Year",
+  "Hour",
+  "Minute",
+  "^(([-!#$%&\'*+/=?^~`{|}\\w]+(\\.[-!#$%&\'*+/=?^~`{|}\\w]+)*)|(\"[^\"]+\"))@[0-9A-Za-z]+(-[0-9A-Za-z]+)*(\\.[0-9A-Za-z]+(-[0-9A-Za-z]+)*)+$",
+  0,
+  2010,
+  "must not contain either \'<\' or \'>\'",
+  "cannot be negative",
+  "Field contains too many characters.",
+  "Must contain a valid format character.",
+  "is not a valid format character.",
+  "Must contain a valid number.",
+  "is not a valid number.",
+  "Must contain a valid alpha-numeric.",
+  "is not a valid alpha-numeric.",
+  "Must contain a valid letter.",
+  "is not a valid letter.",
+  "Must contain a valid character.",
+  "is not a valid character.",
+  "The correct format is",
+  "The value you have entered is less than the smallest value allowed for this field.",
+  "The value you have entered is greater than the largest value allowed for this field.",
+  "is not a valid date.",
+  "is not a valid date. Please enter a date in format",
+  "MM",
+  "DD",
+  "YYYY",
+  "Minimum year is:",
+  "Maximum year is:",
+  "Only letters, digits, space, and (,.+#) are valid for %s");
+//--></script> 
+
+
+</head>
+<body>
+
+  <div id="home" class="current">
+    
+   <div class="toolbar">
+     <h1>Request Info</h1>
+     <a class="back" href="http://ecampus.usf.edu/m/index.html">Home</a>
+   </div>
+   
+
+   <form action="http://usfmetro.custhelp.com/ci/documents/submit" name="_main" method="post" onSubmit="return(_do_submit(this))" class="form"> 
+
+    <script type="text/javascript"><!--
+    var _fields = new Array ();
+    //--></script> 
+    
+    <ul>
+
+      <li><input placeholder="First Name" name="wf_2_100003" type="text"></li>
+      <input type="hidden" name="val_wf_2_100003" value="'wf_2_100003','First Name',5,80,1" />
+      <script type="text/javascript"><!--
+      _fields.push(new field('wf_2_100003','First Name',5,80,1));
+      //--></script>
+
+
+      <li><input placeholder="Last Name" name="wf_2_100002" type="text"></li>
+      <input type="hidden" name="val_wf_2_100002" value="'wf_2_100002','Last Name',5,80,1" />
+      <script type="text/javascript"><!--
+      _fields.push(new field('wf_2_100002','Last Name',5,80,1));
+      //--></script></p> 
+
+
+
+      <li><input placeholder="Email" name="wf_2_100004" type="text"></li>
+      <input type="hidden" name="val_wf_2_100004" value="'wf_2_100004','Email Address (case sensitive)',5,80,5" />
+      <script type="text/javascript"><!--
+      _fields.push(new field('wf_2_100004','Email Address (case sensitive)',5,80,5));
+      //--></script></p> 
+
+
+
+
+      <li><input placeholder="Comments" name="wf_2_103" type="text"></li>
+      <input type="hidden" name="val_wf_2_103" value="'wf_2_103','Comments',6,4000,0" />
+      <script type="text/javascript">
+      <!--
+      _fields.push(new field('wf_2_103','Comments',6,4000,0));
+      //--></script></p> 
+
+
+      <!--<input placeholder="Program of Interest" name="wf_2_98" type="text">-->
+
+      <li>Program of Interest: 
+        <SELECT name="wf_2_98"> 
+         <option value="">--</option> 
+         <option value="320">Bachelor of General Studies</option> 
+         <option value="321">Osher Reentry Scholarship</option> 
+         <option value="322">Graduate Certificates</option> 
+         <option value="323">Online Learning</option> 
+         <option value="348">Graduate Non-degree enrollment</option> 
+         <option value="382">Other</option> 
+       </SELECT>
+     </li>
+
+
+     <input type="hidden" name="val_wf_2_98" value="'wf_2_98','Program of interest?',1,30,1" />
+     <script type="text/javascript"><!--
+     _fields.push(new field('wf_2_98','Program of interest?',1,30,1));
+     //--></script></p> 
+
+
+     <li><input id="submit_btn" value="Submit" type="submit" name="submit_btn" rntsubmit="true" class="submit" /></li> 
+
+   </ul>
+
+
+
+   <ul class="individual">
+     <li><a target="_blank" href="http://usfmetro.custhelp.com/rd?1=AvUG~wr~DP8SARb~Gv8e~yJxJvsq~y7~Mv_r~zr~&amp;2=11">USF Privacy Policy</a></li>
+   </ul>
+
+
+
+   <input name="p_t" type="hidden" value="AvUG~wr~DP8SARb~Gv8e~yJxJvsq~y7~Mv_r~zr~" /> 
+   <input name="p_shortcut" type="hidden" value="webform" /> 
+   <input name="_survey_score" type="hidden" value="0" /> 
+   <input name="_last_page_num" type="hidden" value="-1" /> 
+   <input name="p_val_validated" type="hidden" value="0" /> 
+
+
+ </form> 
+ <script type="text/javascript"><!--
+ _fields.push(new field('','',0,0,0));
+ //--></script> 
+ 
+ 
+ 
+ <div class="info">
+   Copyright &copy; 2010 University of South Florida, ECampus
+   4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+ </div>
+ 
+</div><!--end home-->
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6265940; 
+var sc_invisible=1; 
+var sc_security="fd6902ea"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr visitor"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/6265940/0/fd6902ea/1/"
+alt="tumblr visitor" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+</html>

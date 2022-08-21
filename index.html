@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ECampus</title>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>     
+	<script type="text/javascript"> google.load("jquery", "1.3.2"); </script> 
+	<script src="js/jq.js" type="application/x-javascript" charset="utf-8"></script> 
+	<script src="js/transitions.js" type="application/x-javascript" charset="utf-8"></script> 
+	<style type="text/css" media="screen">@import "css/default.css";</style>     
+	<style type="text/css" media="screen">@import "css/theme.css";</style>
+
+	<script type="text/javascript" charset="utf-8">
+	var jQT = new $.jQTouch({
+		icon: 'jqtouch.png',
+		addGlossToIcon: false,
+		startupScreen: 'jqt_startup.png',
+		statusBar: 'black',
+		preloadImages: [
+
+		'img/back_button.png',
+		'img/back_button_clicked.png',
+		'img/button.png',
+		'img/button_clicked.png',
+		'img/001.jpg',
+		'img/titlebar.png',
+		'img/chevron.png',
+		'img/chevron_circle.png',
+		'img/toolbar.png',
+		'img/loading.gif'
+		]
+	});
+	
+
+	$(function(){
+		
+		$('a[target="_blank"]').click(function() {
+			if (confirm('This link opens in a new window.')) {
+				return true;
+			} else {
+				$(this).removeClass('active');
+				return false;
+			}
+		});
+		
+	});
+	
+	</script>
+	
+</head>
+<body>
+
+	<div id="home" class="current">
+		<div class="toolbar">
+			<div class="logo">
+				<span>USF ECampus</span>
+			</div>
+		</div><!--end tool-->
+		
+			<img class="responsive" src="img/001.jpg" alt="USF Students" />
+		
+		<ul class="plastic">	
+			<li class="arrow"><a href="#prospective">Prospective Students</a></li>
+			<li class="arrow"><a href="#current">Current Students</a></li>
+			<li class="arrow"><a href="#faculty">Faculty</a></li>
+		</ul>
+		
+		<h2>USF ECampus</h2>
+		<p>USF supports over 84,000 enrollments in over 2,000 distance learning sections annually through a variety of technology options that increase instructor and student access to teaching and learning opportunities.</p>
+
+		<ul class="individual">
+			<li><a href="http://ecampus.usf.edu/m/form.html" target="_blank">Get more info</a></li>
+			<li><a class="flip" href="#help">Help</a></li>
+		</ul>
+		
+		<div class="info">
+			Copyright &copy; 2010 University of South Florida, ECampus
+			4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+		</div><!-- end info-->
+	</div><!--end home-->
+
+	
+	<div id="programs">
+		
+		<div class="toolbar">
+			<h1>Programs</h1>
+			<a class="back" href="#home">Home</a>
+		</div><!--end tool-->
+		<p>In an effort to help you choose a school and program, we offer a quick look into partially and fully online degrees and programs. Each program links to the appropriate 				 			program website.</p>
+		<p>For a complete listing please:</p>
+		
+		<ul class="individual">
+			<li><a href="http://ecampus.usf.edu/m/form.html" target="_blank">Contact Us</a></li>
+		</ul>
+		
+		<ul class="plastic">
+			<li class="forward"><a href="http://web3.cas.usf.edu/main/depts/ccj/" target="_blank">Criminology, B.A.</a></li>
+			<li class="forward"><a href="http://www.ugs.usf.edu/academic/bsas.htm" target="_blank">Applied Sciences, B.S.</a></li> 
+			<li class="forward"><a href="http://health.usf.edu/nocms/nursing/Programs_of_Study/rntobn_admission.html" target="_blank">Nursing, RN to BS</a></li> 
+			<li class="forward"><a href="http://www.coedu.usf.edu/it/curriculum/eds/" target="_blank">Curriculum &amp; Instruction, Ed.S. </a></li> 
+			<li class="forward"><a href="http://www.coedu.usf.edu/main/departments/ache/ade/adema.html" target="_blank">Adult Education, M.A.</a></li>
+
+		</ul>
+		
+		<div class="info">
+			Copyright &copy; 2010 University of South Florida, ECampus
+			4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+		</div><!-- end info-->
+	</div><!--end programs-->
+	
+
+	<div id="current">
+		
+		<div class="toolbar">
+			<h1>Students</h1>
+			<a class="back" href="#home">Home</a>
+		</div><!--end tool-->
+		
+		<ul class="plastic">
+			<li class="forward"><a class="arrow" href="http://usf.edu" target="_blank">USF Homepage</a></li>
+			<li class="forward"><a class="arrow" href="http://mail.usf.edu/" target="_blank">Student Email</a></li>
+			<li class="forward"><a class="arrow" href="http://oasis.usf.edu/" target="_blank">OASIS</a></li>
+			<li class="forward"><a class="arrow" href="https://my.usf.edu/webapps/login/custom/bb_bb60/login.jsp?flag=1" target="_blank">MyUSF</a></li>
+			<li class="forward"><a class="arrow" href="http://directory.acomp.usf.edu/" target="_blank">Directory</a></li>
+			<li class="forward"><a class="arrow" href="http://www.gousfbulls.com/" target="_blank">USF Athletics</a></li>
+			<li class="forward"><a class="arrow" href="http://ecampus.usf.edu/testing/default.asp" target="_blank">ECampus Testing Services</a></li>
+		</ul>
+		
+		<div class="info">
+			Copyright &copy; 2010 University of South Florida, ECampus
+			4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+		</div><!-- end info-->
+	</div><!--end current-->
+	
+	
+	
+	<div id="faculty">
+		
+		<div class="toolbar">
+			<h1>Faculty</h1>
+			<a class="back" href="#home">Home</a>
+		</div><!--end tool-->
+		
+		<ul class="plastic">
+			<li class="forward"><a class="arrow" href="http://www.cte.usf.edu/" target="_blank">C21TE</a></li>
+			<li class="forward"><a class="arrow" href="http://mit.c21te.usf.edu/default.htm" target="_blank">Media Innovation Team</a></li>
+			<li class="forward"><a class="arrow" href="http://ecampus.usf.edu/testing/default.asp" target="_blank">ECampus Testing Services</a></li>
+		</ul>
+		
+		<div class="info">
+			Copyright &copy; 2010 University of South Florida, ECampus
+			4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+		</div><!-- end info-->
+	</div><!--end current-->
+	
+	
+	<div id="prospective">
+		
+		<div class="toolbar">
+			<h1>Prospective</h1>
+			<a class="back" href="#home">Home</a>
+		</div><!--end tool-->
+		
+		<ul class="plastic">
+			<li class="arrow"><a href="#programs">Programs Offered</a></li>
+		</ul>
+		<h2>Why choose USF?</h2>
+		<p>The University of South Florida was founded in 1956 as the first urban public university in the state of Florida. USF has since grown to become one of the top three research universities in the state of Florida and home to over 46,000 students. We are accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award degrees at the baccalaureate, master's, specialist, and doctoral levels, including the Doctor of Medicine. The university has a $1.8 billion annual budget, an annual economic impact of $3.2 billion, and serves more than 46,000 students on campuses in Tampa, St. Petersburg, Sarasota-Manatee and Lakeland.</p>
+		
+		<ul class="individual">
+			<li><a href="http://ecampus.usf.edu/m/form.html" target="_blank">Get more info</a></li>
+			<li><a href="#help">Help</a></li>
+		</ul>
+		
+		<div class="info">
+			Copyright &copy; 2010 University of South Florida, ECampus
+			4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+		</div><!-- end info-->
+	</div><!--end prospective-->
+	
+	
+	<div id="help">
+		
+		<div class="toolbar">
+			<h1>Help</h1>
+			<a class="back" href="#home">Home</a>
+		</div><!--end tool-->
+		
+		<p>USF4YOU offers resources that can help you meet your specific educational goals. 
+			If you are an adult student or a working professional interested in learning online, finishing your degree, 
+			beginning graduate studies or taking a few classes, please contact a USF4YOU representative 
+			for more information.</p>
+
+			<p>888-USF4YOU (888-873-4968)</p>
+			<p><a href="mailto:askusf4you@usf.edu">askusf4you@usf.edu</a></p>
+			
+			<ul class="individual">
+				<li><a href="http://ecampus.usf.edu/m/form.html" target="_blank">Get more info</a></li>
+				<li><a href="http://ecampus.usf.edu/default.asp" target="_blank">View Full Site</a></li>
+			</ul>
+			
+			<div class="info">
+				Copyright &copy; 2010 University of South Florida, ECampus
+				4202 East Fowler Avenue, SVC1072, Tampa, FL 33620
+			</div><!-- end info-->
+			
+		</div><!--end help-->
+
+		
+		
+		<!-- Start of StatCounter Code -->
+		<script type="text/javascript">
+		var sc_project=6265940; 
+		var sc_invisible=1; 
+		var sc_security="fd6902ea"; 
+		</script>
+
+		<script type="text/javascript"
+		src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+		class="statcounter"><a title="tumblr visitor"
+		href="http://statcounter.com/tumblr/" target="_blank"><img
+		class="statcounter"
+		src="http://c.statcounter.com/6265940/0/fd6902ea/1/"
+		alt="tumblr visitor" ></a></div></noscript>
+		<!-- End of StatCounter Code -->	
+		
+	</body>
+	</html>
